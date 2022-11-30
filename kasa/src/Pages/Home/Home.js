@@ -1,13 +1,15 @@
-import Navigation from 'components/Navigation/Navigation';
-import React from 'react';
+import Navigation from "components/Navigation/Navigation";
+import React from "react";
+import api from "../../components/RecupData";
 
 const Home = () => {
-    return (
-        <div>
-            <Navigation />
-            <Home />
-        </div>
-    );
+  return (
+    <div>
+      <Navigation />
+      <api />
+      <Home />
+    </div>
+  );
 };
 
 export default Home;
