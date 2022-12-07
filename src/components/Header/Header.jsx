@@ -1,14 +1,13 @@
-import React from 'react';
-import Logo from "../.././assets/images/LOGO.jpg";
-import './Header.module.scss';
-import '../Navbar/Navbar';
+import React from 'react'
+import Navbar from '../Navbar/Navbar'
+import Logo from '../../../src/assets/images/logo_header.jpg'
+import '../Header/Header.module.scss'
 
-const Header = () => {
-    return (
-      <Header>
-        <img className="logo" src={Logo} alt="Logo agence Kasa"/>
-      </Header>
-    );
-};
-
-export default Header;
+export default function Header() {
+  return (
+    <Header>
+      <img className="logo_header" src={logo_header} alt=" logo Kasa" />
+      <Navbar/>
+    </Header>
+  );
+}

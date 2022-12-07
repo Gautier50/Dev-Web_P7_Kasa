@@ -14,7 +14,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   
-  <BrowserRouter>    
+  <BrowserRouter>
+  {/* <Header />    */}
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
@@ -23,4 +24,5 @@ root.render(
     </Routes>
     <Footer />
   </BrowserRouter>
+  
 );

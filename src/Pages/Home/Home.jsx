@@ -1,7 +1,8 @@
-import React from "react";
-import Cards from "../../components/Cards/Cards";
-import Data from "../../data.json";
-import { Link } from "react-router-dom";
+import React from "react"
+import Cards from "../../components/Cards/Cards"
+import Data from "../../data.json"
+import { Link } from "react-router-dom"
+import './Home.module.scss'
 
 export default function Home() {
   return (
