@@ -5,8 +5,11 @@ import { useParams } from "react-router-dom";
 
 export default function Location() {
   const { id } = useParams();
-  const descriptionLocation = Data.find((location) => location.id);
+
+  const descriptionLocation = Data.find((location) => location.id === id);
+
   if (descriptionLocation !== undefined) {
+
   } else {
     window.location.href = "/404";
   }

@@ -1,12 +1,20 @@
-import React from 'react'
-import Banner from '../../.././src/assets/images/IMG.jpg';
-import './../Banner/Banner.scss';
+import React from "react";
+import "../Banner/Banner.scss";
+import BannerImg from "../.././assets/images/img_background.jpg";
 
 export default function Banner() {
   return (
-    <div className='Home_Banner'>
-        <img clasname='Home_Banner' src={IMG} alt="Image de couverture" />
-
+    <div className="Banner">
+      <figure className="Banner_fig">
+        <img
+          className="banner_fig_img"
+          src={BannerImg}
+          alt="banniere page d'accueil"
+        />
+      </figure>
+      <div className="Banner_text">
+        <p className="Banner_text_p">Chez vous, partout et ailleurs</p>
+      </div>
     </div>
-  )
+  );
 }
