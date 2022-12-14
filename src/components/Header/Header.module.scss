@@ -1,12 +1,15 @@
-.header {
-    .logo.img {
-        width: 80px;
-    }
-    color:#FF6060;
-    display: block;
-    display: flex;
-}
-.logo {
+img {
+    .logo {
     width: 50px;
     height: 50px;
+}
+}
+
+
+a {
+    color:#FF6060;
+    text-decoration: none;
+}
+a:hover {
+   text-decoration: underline; 
 }

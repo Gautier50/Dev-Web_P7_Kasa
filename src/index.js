@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.scss";
 
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+// import Header from "./components/Header/Header";
+// import Footer from "./components/Footer/Footer";
 import Error from "./Pages/Error/Error";
 import Location from "./Pages/Location/Location";
 import About from "./Pages/About/About";
