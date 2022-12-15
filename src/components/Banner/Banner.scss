@@ -1,0 +1,23 @@
+.Banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  img {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 340px;
+    height: 110px;
+    border-radius: 10px;
+  }
+}
+.Banner_text_p {
+    position: absolute;
+    color: white;;
+    width: 217px;
+    height: 48px;
+    font-size: 17px;
+    top: 151px;
+    left: 189px;
+}

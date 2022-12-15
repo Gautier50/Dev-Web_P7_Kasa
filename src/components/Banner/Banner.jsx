@@ -13,7 +13,7 @@ export default function Banner() {
         />
       </figure>
       <div className="Banner_text">
-        <p className="Banner_text_p">Chez vous, partout et ailleurs</p>
+        <h1 className="Banner_text_p">Chez vous, partout et ailleurs</h1>
       </div>
     </div>
   );

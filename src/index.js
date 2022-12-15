@@ -8,7 +8,7 @@ import Error from "./Pages/Error/Error";
 import Location from "./Pages/Location/Location";
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,7 +18,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
       <Route path="/Location/:id" element={<Location />} />
-      <Route path="*" element={<Error />} />
+      <Route path="*" element={<Error/>} />
     </Routes>
     {/* <Footer /> */}
   </BrowserRouter>

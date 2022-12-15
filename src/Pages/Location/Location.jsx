@@ -1,21 +1,24 @@
 import React from "react";
-import Data from "../../data.json";
-import Caroussel from "../.././components/Caroussel/Caroussel";
 import { useParams } from "react-router-dom";
+import Data from "../../data.json";
+// import LocationPage from "../../components/LocationPage/LocationPage";
+import Caroussel from "../../components/Caroussel/Caroussel";
+import Collapse from "../../../src/components/Collapse/Collapse";
 
-export default function Location() {
-  const { id } = useParams();
-
-  const descriptionLocation = Data.find((location) => location.id === id);
-
-  if (descriptionLocation !== undefined) {
-
-  } else {
-    window.location.href = "/404";
-  }
+const Location = () => {
+  const { locationId } = useParams();
+  const oneLocation = location.find((location) => location.id === locationId);
+  const { title, location, rating, host, equipments, description, pictures } =
+    location;
   return (
-    <div>
+    <div className="singlelocation">
       <Caroussel />
+
+      <div className="singlelocation_chevron_down">
+        <Collapse title="description" content={description} />
+        <Collapse title="équipement" content={equipments} />
+      </div>
     </div>
   );
-}
+};
+export default Location;

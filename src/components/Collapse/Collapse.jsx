@@ -18,10 +18,9 @@ export default function Collapse() {
         <div className="fiability">
           <h3>
             Fiabilité<i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-up"></i>
           </h3>
-          <i class="fas fa-chevron-up"></i>
 
-          <i class="fa-solid fa-chevron-down"></i>
           <p>
             Les annonces postées sur Kasa granatissent une fiabilité totale. Les
             photos sont conformes aux logements, et toutes les informations sont
