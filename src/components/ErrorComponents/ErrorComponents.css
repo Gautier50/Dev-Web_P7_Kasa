@@ -1,0 +1,21 @@
+a {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+   color: #ff6060;
+   font-size: 96px;
+   font-weight: 700;
+   line-height: 137px;
+   text-align: center;
+ }
+p {
+  display: flex;
+  justify-content: center;
+}
+.imgerror {
+  border: solid 2px blue;
+  width: 200px;
+font-size: 20px;
+}

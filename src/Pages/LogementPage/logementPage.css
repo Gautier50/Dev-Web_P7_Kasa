@@ -1,0 +1,54 @@
+.titre_logement {
+  color: #ff6060;
+  font-size: 18px;
+}
+span {
+  color: #ff6060;
+}
+.location_logement {
+  color: #ff6060;
+}
+.tags_logement {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ff6060;
+  color: white;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.host_logement {
+  width: 200px;
+  height: 300px;
+  border: solid 2px green;
+}
+.host_logement_img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.description {
+  background-color: #ff6060;
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.equipements {
+  background-color: #ff6060;
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dropdown {
+  background-color: #f7f7f7;
+  color: #ff6060;
+}

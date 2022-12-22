@@ -1,12 +1,20 @@
 * {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  box-sizing: border-box;
 }
 
+// Écrans de type mobile
 @media screen and (max-width: 767px) {
   .cards {
     width: 335px;
     height: 255px;
+    h2 {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
   }
   .HebergementsLink {
     display: flex;
@@ -14,13 +22,14 @@
     align-items: center;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+// Écrans de type ordinateur
+@media screen and (min-width: 768px) {
   .cards {
     width: 340px;
     height: 340px;
     h2 {
       position: absolute;
-      top: 170px;
+      top: 166px;
     }
 
   }
@@ -28,7 +37,6 @@
    position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
     
   }
