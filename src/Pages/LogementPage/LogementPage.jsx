@@ -2,11 +2,12 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Collapse from "../../components/Collapse/Collapse";
 import products from "../../data.json";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import Carousel from "../../components/Carousel/Carousel";
 import "../LogementPage/logementPage.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import Tag from "../../components/Tag/Tag";
+import Rating from "../../components/Rating/Rating";
 
 export default function LogementPage() {
   const { id } = useParams();
@@ -30,25 +31,33 @@ export default function LogementPage() {
         <Header />
         <div className="ficheLogement">
           <Carousel pictures={dataLogement.pictures} />
+
           <h1 className="titre_logement">{dataLogement?.title}</h1>
           <p className="location_logement">{dataLogement?.location}</p>
+          <Tag />
           <span className="tags_logement">{dataLogement?.tags}</span>
-          <span className="rating_logement">{dataLogement.rating}</span>
-          <span classeName="host">
-            <span className="host_logement">{dataLogement?.host.name}</span>
-            <img
-              className="host_logement_img"
-              src={dataLogement.host.picture}
-              alt="photo_propriétaire"
-            />
-          </span>
-          
-            <p className="description">Description</p>
-            <Collapse description={dataLogement.description} />
-            <p className="equipements">Equipements</p>
-            <Collapse equipments={dataLogement.equipments} />
-          
+
+          <div className="host">
+            <Rating />
+            <span className="rating_logement">{dataLogement.rating}</span>
+            <div className="host_profile">
+              <span className="host_logement_name">
+                {dataLogement?.host.name}
+              </span>
+              <img
+                className="host_logement_img"
+                src={dataLogement.host.picture}
+                alt="photo_propriétaire"
+              />
+            </div>
+          </div>
+          <p className="description">Description</p>
+          <Collapse description={dataLogement.description} />
+
+          <ul className="equipements">Equipements</ul>
+          <Collapse equipments={dataLogement.equipments} />
         </div>
+
         <div>
           <Footer />
         </div>

@@ -1,0 +1,6 @@
+.etoilesRating {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    border: solid 2px orange;
+}

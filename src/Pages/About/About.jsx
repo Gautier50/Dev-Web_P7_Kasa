@@ -18,16 +18,16 @@ export default function About() {
         />
         <div className="fiability">
           <h3 className="Title">Fiabilité</h3>
-          <Collapse title="fiabilité"/>
-          
-          {/* <i className="fas fa-chevron-up"></i> */}
+          <Collapse />
+          <p className="fiability_infos">
+            Les annonces postées sur Kasa granatissent une fiabilité totale. Les
+            photos sont conformes aux logements, et toutes les informations sont
+            régulièrement vérifiées par nos équipes
+          </p>
         </div>
 
         <div className="respect">
-          <h3 className="Title">
-            
-            Respect
-          </h3>
+          <h3 className="Title">Respect</h3>
           <Collapse />
           <p className="respect_infos">
             La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
@@ -37,9 +37,7 @@ export default function About() {
         </div>
 
         <div className="service">
-          <h3 className="Title">
-            Service
-          </h3>
+          <h3 className="Title">Service</h3>
           <Collapse />
           <p className="service_infos">
             Nos équipes se tiennent à votre disposition pour vous fournir une
@@ -49,9 +47,7 @@ export default function About() {
         </div>
 
         <div className="security">
-          <h3 className="Title">
-            Sécurité
-          </h3>
+          <h3 className="Title">Sécurité</h3>
           <Collapse />
           <p className="security_infos">
             La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que

@@ -3,13 +3,12 @@ h2 {
   font-size: 16px;
   position: absolute;
   top: 70%;
-  right: 50%;
+  padding-left: 10px;
 }
 .cards {
 position:relative;
 }
 .cards > img {
- 
   width: 335px;
   height: 230px;
   border-radius: 10px;

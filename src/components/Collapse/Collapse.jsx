@@ -1,24 +1,19 @@
 import React, { useState } from "react";
 import "../Collapse/Collapse.css";
 
+
 const Collapse = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  
   return isOpen ? (
-    <div className="dropdown">
+    <div className="dropdown_logement_page_close">
       <i className="fas fa-chevron-up" onClick={() => setIsOpen(false)}></i>
-
-      <div></div>
-      <div>
-        <p className="fiability_infos">
-          Les annonces postées sur Kasa granatissent une fiabilité totale. Les
-          photos sont conformes aux logements, et toutes les informations sont
-          régulièrement vérifiées par nos équipes
-        </p>
-      </div>
     </div>
   ) : (
-    <i className="fas fa-chevron-down" onClick={() => setIsOpen(true)}></i>
+    <div className="dropdown_logement_page_open">
+      <i className="fas fa-chevron-down" onClick={() => setIsOpen(true)}></i>
+     
+    </div>
   );
 };
 

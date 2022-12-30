@@ -6,20 +6,21 @@
 
 // Écrans de type mobile
 @media screen and (max-width: 767px) {
-  .cards {
-    width: 335px;
-    height: 255px;
-    h2 {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: flex-start;
-    }
+  
+  h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
   }
   .HebergementsLink {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .cards {
+    width: 335px;
+    height: 255px;
   }
 }
 // Écrans de type ordinateur
@@ -31,13 +32,11 @@
       position: absolute;
       top: 166px;
     }
-
   }
   #Hebergements {
-   position: relative;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
   }
 }

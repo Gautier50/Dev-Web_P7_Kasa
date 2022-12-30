@@ -17,14 +17,27 @@ span {
   height: 20px;
   border-radius: 5px;
 }
-
-.host_logement {
-  width: 200px;
-  height: 300px;
-  border: solid 2px green;
+.host {
+  border: solid 2px blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating_logement {
+  border: solid 2px cyan;
+}
+.host_profile {
+  display: flex;
+  
+}
+.host_logement_name {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
 }
 .host_logement_img {
   border-radius: 50%;
+  
   width: 60px;
   height: 60px;
 }
