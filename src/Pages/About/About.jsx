@@ -16,10 +16,11 @@ export default function About() {
           src={about_background}
           alt="bannière page à propos"
         />
+
         <div className="fiability">
-          <h3 className="Title">Fiabilité</h3>
+          <h3 className="title">Fiabilité</h3>
           <Collapse />
-          <p className="fiability_infos">
+          <p className="infos">
             Les annonces postées sur Kasa granatissent une fiabilité totale. Les
             photos sont conformes aux logements, et toutes les informations sont
             régulièrement vérifiées par nos équipes
@@ -27,9 +28,9 @@ export default function About() {
         </div>
 
         <div className="respect">
-          <h3 className="Title">Respect</h3>
+          <h3 className="title">Respect</h3>
           <Collapse />
-          <p className="respect_infos">
+          <p className="infos">
             La bienveillance fait partie des valeurs fondatrices de Kasa. Tout
             comportement discriminatoire ou de perturbation du voisinage
             entraînera une exclusion de notre plateforme.
@@ -37,9 +38,9 @@ export default function About() {
         </div>
 
         <div className="service">
-          <h3 className="Title">Service</h3>
+          <h3 className="title">Service</h3>
           <Collapse />
-          <p className="service_infos">
+          <p className="infos">
             Nos équipes se tiennent à votre disposition pour vous fournir une
             expérience parfaite. N'hésitez pas à nous contacter si vous avez la
             moindre question.
@@ -47,9 +48,9 @@ export default function About() {
         </div>
 
         <div className="security">
-          <h3 className="Title">Sécurité</h3>
+          <h3 className="title">Sécurité</h3>
           <Collapse />
-          <p className="security_infos">
+          <p className="infos">
             La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que
             pour les voyageurs, chaque logement correspond aux critères de
             sécurité établis par nos services. En laissant une note aussi bien à

@@ -1,0 +1,22 @@
+.title {
+  background-color: #ff6060;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* .dropdown_about_page_respect_close {
+    background-color: #ff6060;
+    width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px;
+  padding-right: 8px;
+} */

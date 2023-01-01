@@ -30,7 +30,7 @@ export default function LogementPage() {
       <div>
         <Header />
         <div className="ficheLogement">
-          <Carousel pictures={dataLogement.pictures} />
+          <Carousel pictures={dataLogement.pictures} key={id}/>
 
           <h1 className="titre_logement">{dataLogement?.title}</h1>
           <p className="location_logement">{dataLogement?.location}</p>

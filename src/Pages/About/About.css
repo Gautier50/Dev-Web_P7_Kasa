@@ -9,40 +9,7 @@
   align-items: center;
 }
 
-h3 {
-  padding: 8px;
-  background-color: #ff6060;
-  color: white;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 .infos {
-  background-color: #f7f7f7;
-}
-.fiability_infos {
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  color: #ff6060;
-  padding: 8px;
-}
-
-.respect_infos {
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  color: #ff6060;
-  padding: 8px;
-}
-
-.service_infos {
-  background-color: #f7f7f7;
-  border-radius: 5px;
-  color: #ff6060;
-  padding: 8px;
-}
-
-.security_infos {
   background-color: #f7f7f7;
   border-radius: 5px;
   color: #ff6060;
