@@ -8,23 +8,11 @@ span {
 .location_logement {
   color: #ff6060;
 }
-.tags_logement {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background-color: #ff6060;
-  color: white;
-  height: 20px;
-  border-radius: 5px;
-}
+
 .host {
-  border: solid 2px blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-.rating_logement {
-  border: solid 2px cyan;
 }
 .host_profile {
   display: flex;
@@ -34,6 +22,7 @@ span {
   display: flex;
   align-items: center;
   padding-right: 15px;
+  font-size: 16px;
 }
 .host_logement_img {
   border-radius: 50%;

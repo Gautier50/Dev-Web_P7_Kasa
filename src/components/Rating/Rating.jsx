@@ -5,6 +5,7 @@ import etoile_vide from "../.././assets/images/etoile_vide.svg";
 
 const Rating = ({ rating }) => {
   const stars = [1, 2, 3, 4, 5];
+  console.log(stars)
 
   return (
     <div className="rating">

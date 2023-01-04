@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "../Collapse/Collapse.css";
 
-const Collapse = (props) => {
+const Collapse = () => {
   const [isOpen, setIsOpen] = useState(false);
   
   
   return isOpen ? (
     <div className="dropdown_about_page_respect_close">
-      <div className="title_and_arrow">Fiabilité
+      <div className="title_and_arrow">
         <i className="fas fa-chevron-down" onClick={() => setIsOpen(false)}></i>
       </div>
     </div>

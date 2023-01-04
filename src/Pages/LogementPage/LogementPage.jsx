@@ -15,31 +15,33 @@ export default function LogementPage() {
   const dataLogement = products.find((product) => product.id === id);
 
   if (dataLogement) {
-    // const {
-    //   title,
-    //   description,
-    //   pictures,
-    //   tags,
-    //   host,
-    //   rating,
-    //   location,
-    //   equipments,
-    // } = dataLogement;
+    const {
+      title,
+      description,
+      pictures,
+      tags,
+      host,
+      rating,
+      location,
+      equipments,
+    } = dataLogement;
     console.log(dataLogement);
     return (
       <div>
         <Header />
         <div className="ficheLogement">
-          <Carousel pictures={dataLogement.pictures} key={id}/>
-
+          {/* <Carousel pictures={dataLogement.pictures} key={id} /> */}
+          <Carousel slides={pictures} />
           <h1 className="titre_logement">{dataLogement?.title}</h1>
           <p className="location_logement">{dataLogement?.location}</p>
-          <Tag />
-          <span className="tags_logement">{dataLogement?.tags}</span>
+          <div className="tags_logement">
+            {dataLogement.tags.map((tag, index) => (
+              <Tag key={index} getTag={tag} />
+            ))}
+          </div>
 
           <div className="host">
-            <Rating />
-            <span className="rating_logement">{dataLogement.rating}</span>
+            <Rating rating={rating} />
             <div className="host_profile">
               <span className="host_logement_name">
                 {dataLogement?.host.name}
@@ -51,11 +53,12 @@ export default function LogementPage() {
               />
             </div>
           </div>
-          <p className="description">Description</p>
-          <Collapse description={dataLogement.description} />
-
-          <ul className="equipements">Equipements</ul>
-          <Collapse equipments={dataLogement.equipments} />
+          <div className="dropdowns_logement">
+            <p className="description">Description</p>
+            <Collapse title="description" content={description} />
+            <ul className="equipements">Equipements</ul>
+            <Collapse title="équipement" content={equipments} />
+          </div>
         </div>
 
         <div>
