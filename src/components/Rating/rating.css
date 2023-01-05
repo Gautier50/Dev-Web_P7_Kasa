@@ -1,6 +1,11 @@
+.rating {
+    height: 120px;
+    border: solid 2px red;
+    width: 20px;
+    height: 5px;
+}
 .etoilesRating {
     display: flex;
     flex-direction: row;
     width: 200px;
-    border: solid 2px orange;
 }

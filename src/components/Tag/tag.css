@@ -2,16 +2,15 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  height: 45px;
   border-radius: 5px;
 }
 .tag_text {
   display: flex;
-  
   align-items: center;
   justify-content: center;
+  padding: 12px;
   border-radius: 10px;
-  width: 80px;
+  width: auto;
   height: 30px;
   background-color: #ff6060;
   color: white;

@@ -15,23 +15,14 @@ export default function LogementPage() {
   const dataLogement = products.find((product) => product.id === id);
 
   if (dataLogement) {
-    const {
-      title,
-      description,
-      pictures,
-      tags,
-      host,
-      rating,
-      location,
-      equipments,
-    } = dataLogement;
+    const { title, description, pictures, host, rating, location, equipments } =
+      dataLogement;
     console.log(dataLogement);
     return (
       <div>
         <Header />
         <div className="ficheLogement">
-          {/* <Carousel pictures={dataLogement.pictures} key={id} /> */}
-          <Carousel slides={pictures} />
+          <Carousel slides={dataLogement.pictures} />
           <h1 className="titre_logement">{dataLogement?.title}</h1>
           <p className="location_logement">{dataLogement?.location}</p>
           <div className="tags_logement">
@@ -39,9 +30,10 @@ export default function LogementPage() {
               <Tag key={index} getTag={tag} />
             ))}
           </div>
-
-          <div className="host">
+          <div className="stars">
             <Rating rating={rating} />
+          </div>
+          <div className="host">
             <div className="host_profile">
               <span className="host_logement_name">
                 {dataLogement?.host.name}
@@ -54,10 +46,8 @@ export default function LogementPage() {
             </div>
           </div>
           <div className="dropdowns_logement">
-            <p className="description">Description</p>
-            <Collapse title="description" content={description} />
-            <ul className="equipements">Equipements</ul>
-            <Collapse title="équipement" content={equipments} />
+            <Collapse title="Description" content={description} />
+            <Collapse title="Équipements" content={equipments} />
           </div>
         </div>
 

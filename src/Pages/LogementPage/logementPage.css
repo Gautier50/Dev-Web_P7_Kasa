@@ -10,11 +10,16 @@ span {
 }
 
 .host {
+  border: solid 2px blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .host_profile {
+  border: solid 2px green;
+  width: 50%;
+  
   display: flex;
   
 }

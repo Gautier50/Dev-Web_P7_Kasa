@@ -19,6 +19,10 @@
   .banner_text_p {
     font-size: 10px;
   }
+  .banner_about_background {
+  width: 360px;
+  height: 240px;
+  }
   .HebergementsLink {
     display: flex;
     flex-direction: column;
@@ -37,6 +41,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .banner_about_background {
+    width: 100%;
+    height: 500px;
   }
   .tag_text {
     width: 160px;
