@@ -10,31 +10,22 @@ span {
 }
 
 .host {
-  border: solid 2px blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 .host_profile {
-  border: solid 2px green;
-  width: 50%;
-  
+  width: 100%;
   display: flex;
-  
+  justify-content: flex-end;
+  margin-bottom: 20px;
 }
 .host_logement_name {
   display: flex;
   align-items: center;
-  padding-right: 15px;
-  font-size: 16px;
+  padding-right: 10px;
 }
-.host_logement_img {
-  border-radius: 50%;
-  
-  width: 60px;
-  height: 60px;
-}
+
 .description {
   background-color: #ff6060;
   color: white;
@@ -55,7 +46,19 @@ span {
   align-items: center;
   justify-content: flex-start;
 }
-.dropdown {
+.logement_info_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f7f7f7;
+  border-radius: 5px;
+  background-color: #ff6060;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.logement_info_text {
   background-color: #f7f7f7;
   color: #ff6060;
+  padding: 5px;
 }
+

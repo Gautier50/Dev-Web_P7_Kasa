@@ -1,20 +1,30 @@
 import React, { useState } from "react";
 import "../Collapse/Collapse.css";
+import chevron from "../../assets/images/chevron-down-solid.svg";
 
 const Collapse = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  console.log(props);
 
-  return isOpen ? (
+  return open ? (
     <div className="collapse">
-      <div className="title_and_arrow">
-        <i className="fas fa-chevron-up" onClick={() => setIsOpen(true)}></i>
+      <div className="title">
+        <p className="collapse_text">{props.title}</p>
+        <button className="button_collapse">
+          <img
+            src={chevron}
+            alt="chevron descendant"
+            onClick={() => setOpen(true)}
+          />
+        </button>
       </div>
+      <i className="fas fa-chevron-up" onClick={() => setOpen(false)}></i>
     </div>
   ) : (
-    <div className="collapse">
+    <div className="close_collapse">
       <div className="title_and_arrow">
         {props.title}
-        <i className="fas fa-chevron-down" onClick={() => setIsOpen(false)}></i>
+        <i className="fas fa-chevron-down" onClick={props.title}></i>
       </div>
       <p className="text">{props.content}</p>
     </div>

@@ -1,11 +1,10 @@
 .rating {
-    height: 120px;
-    border: solid 2px red;
-    width: 20px;
-    height: 5px;
-}
-.etoilesRating {
     display: flex;
     flex-direction: row;
-    width: 200px;
+    width: 100px;
+    height: 20px;
+}
+.stars {
+    width: 100px;
+    height: 20px;
 }
