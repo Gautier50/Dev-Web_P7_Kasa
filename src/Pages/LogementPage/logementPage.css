@@ -61,4 +61,29 @@ span {
   color: #ff6060;
   padding: 5px;
 }
-
+/* Écrans de type ordinateur */
+@media screen and (min-width: 768px) {
+  
+  .host {
+    height: 300px;
+    width: 100%;
+    border: solid 1px green;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    
+  }
+  .host_profile {
+    border: solid 1px cyan;
+    
+    height: 500px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  .host_logement_name {
+    border: solid 1px orange;
+    height: 60px;
+    width: 130px;
+  }
+}

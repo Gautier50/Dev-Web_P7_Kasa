@@ -16,3 +16,12 @@
   background-color: #ff6060;
   color: white;
 }
+@media screen and (min-width: 768px) {
+  .tags_logement {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .tag {
+    margin-right:15px;
+  }
+}

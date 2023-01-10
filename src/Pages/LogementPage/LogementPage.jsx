@@ -32,8 +32,8 @@ export default function LogementPage() {
             ))}
           </div>
           <div className="host">
-            <div className="stars">
-              <Rating rating={rating} />
+            <div>
+              <Rating className="stars" rating={rating} />
             </div>
             <div className="host_profile">
               <span className="host_logement_name">{host.name}</span>
