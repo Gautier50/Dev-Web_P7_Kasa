@@ -25,7 +25,6 @@ span {
   align-items: center;
   padding-right: 10px;
 }
-
 .description {
   background-color: #ff6060;
   color: white;
@@ -46,6 +45,15 @@ span {
   align-items: center;
   justify-content: flex-start;
 }
+.rating {
+  width: 170px;
+  display: flex;
+  position: absolute;
+  bottom: 344px;
+}
+.rating__icon {
+  font-size: 16px;
+}
 .logement_info_title {
   display: flex;
   justify-content: space-between;
@@ -63,27 +71,37 @@ span {
 }
 /* Écrans de type ordinateur */
 @media screen and (min-width: 768px) {
-  
+  .ficheLogement {
+    height: 150px;
+  }
   .host {
-    height: 300px;
+    height: 170px;
     width: 100%;
-    border: solid 1px green;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
-    
   }
   .host_profile {
-    border: solid 1px cyan;
-    
-    height: 500px;
+    height: 250px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
     justify-content: flex-end;
+    position: absolute;
+    top: 613px;
+    right: 13px;
   }
-  .host_logement_name {
-    border: solid 1px orange;
-    height: 60px;
+  .host_logement_name { 
+    display: flex;
+    align-items: center;
+    height: 90px;
     width: 130px;
+  }
+  .rating {
+    position: absolute;
+    right: 13px;
+    top: 713px;
+  }
+  .logement_info_text {
+    line-height: 23px;
   }
 }

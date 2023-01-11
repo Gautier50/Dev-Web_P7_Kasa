@@ -1,5 +1,3 @@
-
-
 /* Écrans de type mobile */
 @media screen and (min-width: 375px) and (max-width: 767px) {
   #carouselSlider {
@@ -44,8 +42,9 @@
     position: relative;
   }
   .carousel_img {
+    border-radius: 25px;
     width: 100%;
-    height: 415px;
+    height: 500px;
     margin-bottom: 20px;
   }
   .fa-chevron-left {
@@ -53,14 +52,14 @@
     font-size: 50px;
     position: absolute;
     left: 10px;
-    top: 200px;
+    top: 218px;
   }
   .fa-chevron-right {
     color: #ffffff;
     font-size: 50px;
     position: absolute;
     right: 10px;
-    top: 200px;
+    top: 218px;
   }
   .carousel_img_number {
   width: 100%;

@@ -1,34 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Collapse/Collapse.css";
-import chevron from "../../assets/images/chevron-down-solid.svg";
 
-const Collapse = (props) => {
-  const [open, setOpen] = useState(false);
-  console.log(props);
-
-  return open ? (
-    <div className="collapse">
-      <div className="title">
-        <p className="collapse_text">{props.title}</p>
-        <button className="button_collapse">
-          <img
-            src={chevron}
-            alt="chevron descendant"
-            onClick={() => setOpen(true)}
-          />
-        </button>
+export default function Collapse2({ description, equipments }) {
+  return (
+    <div className="logement_wrapper">
+      <div id="logement_info">
+        <details className="logement_info_details">
+          <summary className="logement_info_title">
+            Description <i className="fas fa-chevron-down"></i>
+          </summary>
+          <p className="logement_info_text">{description}</p>
+        </details>
       </div>
-      <i className="fas fa-chevron-up" onClick={() => setOpen(false)}></i>
-    </div>
-  ) : (
-    <div className="close_collapse">
-      <div className="title_and_arrow">
-        {props.title}
-        <i className="fas fa-chevron-down" onClick={props.title}></i>
+    
+      <div id="logement_info">
+        <details className="logement_info_details">
+          <summary className="logement_info_title">
+            Équipements <i className="fas fa-chevron-down"></i>
+          </summary>
+          <ul className="logement_info_text">
+          {equipments.map ((equipment) => {
+            return <li key = {`${equipment}`}>{equipment}</li>
+          })}
+          </ul>
+        </details>
       </div>
-      <p className="text">{props.content}</p>
-    </div>
+      </div>
   );
-};
-
-export default Collapse;
+}
