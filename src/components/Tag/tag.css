@@ -1,10 +1,4 @@
-.tags_logement {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-  border-radius: 5px;
-}
+
 .tag_text {
   display: flex;
   align-items: center;
@@ -21,7 +15,5 @@
     display: flex;
     justify-content: flex-start;
   }
-  .tag {
-    margin-right:15px;
-  }
+  
 }

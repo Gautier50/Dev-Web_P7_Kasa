@@ -1,5 +1,12 @@
-.label {
-  color: white;
+#about_info {
+  width: 95%;
+  margin-bottom: 30px;
+}
+.dropdown_aboutpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .banner_about_background {
   margin-bottom: 20px;
@@ -15,13 +22,11 @@
   border-radius: 5px;
   background-color: #ff6060;
   padding: 5px;
-  margin-bottom: 20px;
-}
-.fa-chevron-down {
-  padding-right: 20px;
+  
 }
 .about_info_text {
   background-color: #f7f7f7;
   color: #ff6060;
   padding: 5px;
+  margin: 0;
 }

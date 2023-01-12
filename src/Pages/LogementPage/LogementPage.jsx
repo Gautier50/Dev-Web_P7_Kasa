@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import Collapse from "../../components/Collapse/Collapse";
 import products from "../../data.json";
 import Carousel from "../../components/Carousel/Carousel";
-
 import "../LogementPage/logementPage.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -33,6 +32,9 @@ export default function LogementPage() {
             ))}
           </div>
           <div className="host">
+            <div className="stars">
+              <Rating rating={rating} />
+            </div>
             <div className="host_profile">
               <span className="host_logement_name">{host.name}</span>
               <img
@@ -42,7 +44,6 @@ export default function LogementPage() {
               />
             </div>
           </div>
-          <Rating className="stars" rating={rating} />
         </div>
         <Collapse description={description} equipments={equipments} />
         <div>

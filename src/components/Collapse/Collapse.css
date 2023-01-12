@@ -2,6 +2,9 @@ details[open] summary .fa-chevron-down {
     transform: rotate(-180deg);
     
 }
+ .fa-chevron-down {
+ margin-right: 20px;
+}
 summary {
   transform:translate(-0%, 20%); ;
 }
