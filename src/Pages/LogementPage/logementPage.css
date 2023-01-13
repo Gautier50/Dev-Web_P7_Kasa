@@ -132,12 +132,15 @@
   }
   .logement_info_text {
     background-color: #f7f7f7;
+    border-radius: 10px;
+    height: 260px;
     color: #ff6060;
     padding: 5px;
     line-height: 23px;
     list-style-type: none;
     margin: 0;
     padding: 15px;
+    padding-bottom: 40px;
   }
   #logement_info {
     width: 45%;
