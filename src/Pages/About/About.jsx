@@ -2,16 +2,16 @@ import React from "react";
 import "../About/About.css";
 import Header from "../.././components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-import about_background from "../.././assets/images/about_background.jpg";
+import about_banner from "../.././assets/images/about_banner.jpg";
 
 export default function About() {
   return (
     <div>
       <Header />
-      <div className="about_background">
+      <div className="about_banner">
         <img
-          className="banner_about_background"
-          src={about_background}
+          className="banner_about_banner"
+          src={about_banner}
           alt="bannière page à propos"
         />
       </div>

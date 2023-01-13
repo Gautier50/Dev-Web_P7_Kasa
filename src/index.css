@@ -3,6 +3,10 @@
   font-weight: 500;
   box-sizing: border-box;
 }
+.cards:hover {
+    transform: scale(1.10);
+    transition: .35s ease-in-out;
+  }
 
 /* Écrans de type mobile */
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -12,7 +16,6 @@
     align-items: center;
     justify-content: flex-start;
   }
-  
   .about_background {
     display: flex;
     align-items: center;
@@ -74,7 +77,8 @@
     height: 40px;
   }
   .cards {
-     
     margin: 20px;
+    
   }
+  
 }
