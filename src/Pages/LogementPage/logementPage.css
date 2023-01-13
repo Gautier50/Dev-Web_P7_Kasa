@@ -11,14 +11,7 @@
 .tag {
   margin-right: 20px;
 }
-.logement_info_text {
-  background-color: #f7f7f7;
-  color: #ff6060;
-  padding: 5px;
-  line-height: 23px;
-  list-style-type: none;
-  margin: 0;
-}
+
 .description {
   background-color: #ff6060;
   color: white;
@@ -48,10 +41,11 @@
   border-radius: 5px;
   background-color: #ff6060;
   padding: 5px;
+  padding-left: 15px;
 }
 
 /* Écrans de type mobile */
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .ficheLogement {
     display: flex;
     flex-direction: column;
@@ -68,8 +62,13 @@
     margin-bottom: 50px;
   }
   .logement_info_text {
-    padding-top: 15px;
-    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    color: #ff6060;
+    padding: 5px;
+    line-height: 23px;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
   }
   .host {
     height: 90px;
@@ -130,6 +129,15 @@
   .logement_wrapper {
     display: flex;
     justify-content: space-between;
+  }
+  .logement_info_text {
+    background-color: #f7f7f7;
+    color: #ff6060;
+    padding: 5px;
+    line-height: 23px;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
   }
   #logement_info {
     width: 45%;
