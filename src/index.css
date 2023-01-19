@@ -4,18 +4,24 @@
   box-sizing: border-box;
 }
 .cards:hover {
-    transform: scale(1.10);
-    transition: .35s ease-in-out;
-  }
+  transform: scale(1.1);
+  transition: 0.35s ease-in-out;
+}
 
 /* Écrans de type mobile */
 @media screen and (min-width: 375px) and (max-width: 767px) {
-  h2 {
+  .legend_title {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 18px;
+    padding-left: 10px;
   }
+
   .about_background {
     display: flex;
     align-items: center;
@@ -48,7 +54,7 @@
 /* Écrans de type ordinateur */
 @media screen and (min-width: 768px) {
   #Hebergements {
-    background-color: #F6F6F6;
+    background-color: #f6f6f6;
     border-radius: 25px;
     width: 100%;
     margin-bottom: 30px;
@@ -78,7 +84,16 @@
   }
   .cards {
     margin: 20px;
-    
   }
-  
+  .legend_title {
+     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0px;
+    padding-left: 10px;
+  }
 }

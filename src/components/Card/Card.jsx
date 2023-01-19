@@ -5,7 +5,7 @@ export default function Cards({cover, title}) {
   return (
     <div className="cards">
         <img src={cover} alt="locations" />
-        <h2>{title}</h2>
+        <h2 className='legend_title'>{title}</h2>
     </div>
   )
 }
